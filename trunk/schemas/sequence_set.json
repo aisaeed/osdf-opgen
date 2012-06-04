@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "description": "This schema is to describe a sequence file. It will ALWAYS describe a single file. even though that file may be located or hosted in many different places (urls).",
+    "properties": {
+        "format": {
+            "type": "string",
+            "enum": [
+                "fasta",
+                "fastq",
+                "sff"
+            ],
+            "required": true
+        },
+        "sequence_type": {
+            "title": "Sequence files can contain either peptide or nucleotide data. This specifies which.",
+            "type": "string",
+            "enum": [
+                "peptide",
+                "nucleotide"
+            ],
+            "required": true
+        },
+        "size": {
+            "title": "The size of the file in bytes.",
+            "type": "integer",
+            "minimum": 0,
+            "required": true
+        },
+        "urls": {
+            "title": "This is an array of URLs (http, ftp, fasp, etc) from where the file can be obtained.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "uri"
+            },
+            "minItems": 1,
+            "required": true
+        },
+        "checksums": {
+            "type": "object",
+            "properties": {
+                "md5": { 
+                    "type": "string",
+                    "pattern": "^[a-f\\d]{32}$",
+                    "required": true
+                },
+                "sha1": { 
+                    "type": "string",
+                    "pattern": "^[a-f\\d]{40}$"
+                }
+            },
+            "additionalProperties": false,
+            "required": true
+        },
+        "tags": {
+            "title": "An array of descriptive strings to make the sequence set 'taggable'.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "uniqueItems": true,
+            "required": true
+        }
+    },
+    "additionalProperties": false
+}
