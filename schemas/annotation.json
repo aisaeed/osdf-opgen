@@ -1,0 +1,13 @@
+{
+    "description": "Annotation for a set of sequences.",
+    "type": "object",
+    "properties": {
+        "process": {
+            "$ref": "process"
+        },
+        "fileset": {
+            "$ref": "fileset"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "description": "Sample nodes describe physical samples collected from subjects or an environment. They are typically decorated with MIMS or MIGS.",
+    "properties": {
+        "rand_subject_id": {
+            "title": "This is a randomized subject id to anonymize subject identity.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10,
+            "required": false
+        },
+        "migs": {
+            "$ref": "migs"
+        },
+        "visit_number": {
+            "type": "integer",
+            "minimum": 1,
+            "required": true
+        },
+        "fma_body_site": {
+            "title": "Typically a term from the FMA ontology.",
+            "type": "string",
+            "required": false
+        }
+    },
+    "additionalProperties": false
+}
