@@ -1,0 +1,23 @@
+{
+    "description": "A node to describe a software process.",
+    "type": "object",
+    "properties": {
+        "software": {
+            "title": "The name of the software package used to produce the abundance information.",
+            "type": "string",
+            "required": true
+        },
+        "version": {
+            "title": "The version information of the software",
+            "type": "string",
+            "required": true
+        },
+        "invocation_string": {
+            "title": "The command line parameters used to invoke the software.",
+            "type": "string",
+            "required": true
+        }
+    },
+    "additionalProperties": false,
+    "required": true
+}

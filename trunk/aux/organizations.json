@@ -1,0 +1,9 @@
+{
+    "title": "The various organizations participating in the project.",
+    "type": "string",
+    "enum": [
+        "opgen",
+        "igs",
+    ],
+    "required": true
+}

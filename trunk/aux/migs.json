@@ -1,0 +1,156 @@
+{
+   "type": "object",
+   "properties": {
+        "adapters": {
+            "type": "string",
+            "required": true
+        },
+        "annot_source": {
+            "type": "string",
+            "required": true
+        },
+        "assembly": {
+            "type": "string",
+            "required": true
+        },
+        "assembly_name": {
+            "type": "string",
+            "required": true
+        },
+        "biome": {
+            "type": "string",
+            "required": true
+        },
+        "biotic_relationship": {
+            "$ref": "biotic_relationships"
+        },
+        "collection_date": {
+            "type": "string",
+            "required": true
+        },
+        "encoded_traits": {
+            "type": "string",
+            "required": true
+        },
+        "env_package": {
+            "$ref": "env_packages"
+        },
+        "estimated_size": {
+            "type": "integer",
+            "minimum": 0,
+            "required": true
+        },
+        "experimental_factor": {
+            "type": "string",
+            "required": true
+        },
+        "extrachrom_elements": {
+            "type": "string",
+            "required": true
+        },
+        "feature": {
+            "type": "string",
+            "required": true
+        },
+        "finishing_strategy": {
+            "type": "string",
+            "required": true
+        },
+        "geo_loc_name": {
+            "type": "string",
+            "required": true
+        },
+        "health_disease_stat": {
+            "type": "string",
+            "required": true
+        },
+        "host_spec_range": {
+            "type": "string",
+            "required": true
+        },
+        "investigation_type": {
+           "$ref": "investigation_types"
+        },
+        "isol_growth_condt": {
+            "type": "string",
+            "required": true
+        },
+        "lat_lon": {
+            "title": "Latitude/Longitude. Probably needs to use a regex here.",
+            "type": "string",
+            "required": true
+        },
+        "lib_vector": {
+            "type": "string",
+            "required": true
+        },
+        "material": {
+            "type": "string",
+            "required": true
+        },
+        "nucl_acid_amp": {
+            "type": "string",
+            "required": true
+        },
+        "nucl_acid_ext": {
+            "type": "string",
+            "required": true
+        },
+        "num_replicons": {
+            "type": "string",
+            "required": true
+        },
+        "project_name": {
+            "type": "string",
+            "required": true
+        },
+        "rel_to_oxygen": {
+            "type": "string",
+            "required": true
+        },
+        "samp_collect_device": {
+            "type": "string",
+            "required": true
+        },
+        "samp_mat_process": {
+            "type": "string",
+            "required": true
+        },
+        "samp_size": {
+            "type": "string",
+            "required": true
+        },
+        "seq_meth": {
+            "type": "string",
+            "required": true
+        },
+        "sop": {
+            "type": "string",
+            "required": true
+        },
+        "source_mat_id": {
+            "type": "string",
+            "required": true
+        },
+        "specific_host": {
+            "type": "string",
+            "required": true
+        },
+        "submitted_to_insdc": {
+            "type": "string",
+            "required": true
+        },
+        "subspecf_gen_lin": {
+            "type": "string",
+            "required": true
+        },
+        "trophic_level": {
+            "$ref": "trophic_levels"
+        },
+        "url": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "additionalProperties": false
+}

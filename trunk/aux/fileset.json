@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "description": "A schema to define a node for a collection of files.",
+    "properties":  {
+        "files": {
+            "title": "An array of objects, each containing file metadata and a list of locations where the file is accessible from.",
+            "type": "array",
+            "items": {
+                "title": "An object with a format and a list of URLs from which the file can be obtained.",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "title": "The type of file this describes.", 
+                        "type": "string",
+                        "required": false
+                    },
+                    "size": {
+                        "title": "The size of the file in bytes.",
+                        "type": "integer",
+                        "minimum": 0,
+                        "required": true
+                    },
+                    "urls": {
+                        "title": "An array of URLs/URIs that describe the various locations where the file can be found.",
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "minItems": 1,
+                        "required": true
+                    },
+                    "checksums": {
+                        "title": "Checksums for data integrity checking.",
+                        "type": "object",
+                        "properties": {
+                            "md5": {
+                                "title": "The MD5 checksum in hexadecimal format.",
+                                "type": "string",
+                                "pattern": "^[a-f\\d]{32}$",
+                                "required": true
+                            },
+                            "sha1": {
+                                "title": "The SHA1 checksum in hexadecimal format.",
+                                "type": "string",
+                                "pattern": "^[a-f\\d]{40}$"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": true
+                    }
+                },
+                "additionalProperties": false
+            },
+            "minItems": 1,
+            "required": true
+        }
+    },
+    "additionalProperties": false,
+    "required": true
+}

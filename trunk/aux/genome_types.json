@@ -1,0 +1,9 @@
+{
+    "title": "The various types of genomes that are possible.",
+    "type": "string",
+    "enum": [
+        "metagenomic",
+        "reference_genome"
+    ],
+    "required": true
+}
