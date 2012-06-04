@@ -1,0 +1,48 @@
+{
+    "description": "A description of an assembly node that links to input and output sequence set nodes.",
+    "type": "object",
+    "properties": {
+        "assembler": {
+            "$ref": "process"
+        },
+        "genome_type": {
+            "$ref": "genome_types"
+        },
+        "contact": {
+            "type": "object",
+            "properties": {
+                "organization":  {
+                    "$ref": "organizations"
+                },
+                "email": {
+                    "type": "string",
+                    "format": "email",
+                    "required": true
+                }
+            },
+            "additionalProperties": false,
+            "required": true
+        },
+        "date": {
+            "type": "string",
+            "format": "date",
+            "required": true
+        },
+        "sop":  {
+            "type": "string",
+            "format": "uri",
+            "required": true
+        },
+        "tags": {
+            "title": "An array of descriptive strings to make the node 'taggable'.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "uniqueItems": true,
+            "required": true
+        }
+    },
+    "additionalProperties": false,
+    "required": true
+}

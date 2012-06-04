@@ -1,0 +1,141 @@
+{
+    "description": "The MIMS specification.",
+    "type": "object",
+    "properties": {
+        "lib_vector": {
+            "type": "string",
+            "required": true
+        },
+        "nucl_acid_amp": {
+            "type": "string",
+            "required": true
+        },
+        "seq_meth": {
+            "type": "string",
+            "required": true
+        },
+        "lib_size": {
+            "type": "string",
+            "required": true
+        },
+        "feature": {
+            "title": "Typically a term from the ENVO ontology.",
+            "type": "string",
+            "required": true
+        },
+        "lib_screen": {
+            "type": "string",
+            "required": true
+        },
+        "source_mat_id": {
+            "type": "string",
+            "required": true
+        },
+        "sop": {
+            "type": "string",
+            "required": true
+        },
+        "url": {
+            "type": "string",
+            "required": true
+        },
+        "assembly": {
+            "type": "string",
+            "required": true
+        },
+        "samp_collect_device": {
+            "type": "string",
+            "required": true
+        },
+        "samp_size": {
+            "type": "string",
+            "required": true
+        },
+        "experimental_factor": {
+            "type": "string",
+            "required": true
+        },
+        "lib_reads_seqd": {
+            "type": "string",
+            "required": true
+        },
+        "submitted_to_insdc": {
+            "type": "string",
+            "enum": [ "yes", "no" ],
+            "required": true
+        },
+        "adapters": {
+            "type": "string",
+            "required": true
+        },
+        "lat_lon": {
+            "title": "WGS84 format",
+            "type": "string",
+            "required": true
+        },
+        "investigation_type": {
+            "type": "string",
+            "required": true
+        },
+        "annot_source": {
+            "type": "string",
+            "required": true
+        },
+        "geo_loc_name": {
+            "type": "string",
+            "required": true
+        },
+        "collection_date": {
+            "type": "string",
+            "format": "date",
+            "required": true
+        },
+        "mid": {
+            "type": "string",
+            "required": true
+        },
+        "biome": {
+            "title": "Typically a term from the ENVO ontology.",
+            "type": "string",
+            "required": true
+        },
+        "rel_to_oxygen": {
+            "type": "string",
+            "required": true
+        },
+        "project_name": {
+            "type": "string",
+            "required": true
+        },
+        "finishing_strategy": {
+            "type": "string",
+            "required": true
+        },
+        "samp_mat_process": {
+            "type": "string",
+            "required": true
+        },
+        "assembly_name": {
+            "type": "string",
+            "required": true
+        },
+        "env_package": {
+            "$ref": "env_packages"
+        },
+        "lib_const_meth": {
+            "type": "string",
+            "required": true
+        },
+        "nucl_acid_ext": {
+            "type": "string",
+            "format": "uri",
+            "required": true
+        },
+        "material": {
+            "title": "Typically a term from the ENVO ontology.",
+            "type": "string",
+            "required": true
+        }
+    },
+    "additionalProperties": false
+}
