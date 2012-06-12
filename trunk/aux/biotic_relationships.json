@@ -1,0 +1,11 @@
+{
+   "type":"string",
+   "enum":[
+       "free living",
+       "parasite",
+       "commensal",
+       "symbiont",
+       ""
+   ],
+   "required": true
+}
