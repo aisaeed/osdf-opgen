@@ -73,6 +73,9 @@
         "scaling_verified": {
             "type": "boolean",
             "required": true
+        },
+        "fileset": {
+            "$ref": "fileset"
         }
     },
     "additionalProperties": false
