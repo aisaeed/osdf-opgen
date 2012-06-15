@@ -32,7 +32,7 @@
             "minimum": 1,
             "required": true
         },
-        "avg_fragsize": {
+        "avg_frag_size": {
             "type": "number",
             "minimum": 1,
             "required": true
