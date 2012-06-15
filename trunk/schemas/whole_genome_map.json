@@ -1,0 +1,79 @@
+{
+    "description": "Whole Genome Map or just Map.",
+    "type": "object",
+    "properties": {
+        "map_description": {
+            "type": "string",
+            "required": true
+        },
+        "genus": {
+            "type": "string",
+            "required": true
+        },
+        "species": {
+            "type": "string",
+            "required": true
+        },
+        "serotype": {
+            "type": "string",
+            "required": false
+        },
+        "enzyme": {
+            "type": "string",
+            "required": false
+        },
+        "genome_length": {
+            "type": "integer",
+            "minimum": 1,
+            "required": true
+        },
+        "fragments": {
+            "type": "integer",
+            "minimum": 1,
+            "required": true
+        },
+        "avg_fragsize": {
+            "type": "number",
+            "minimum": 1,
+            "required": true
+        },        
+        "circular": {
+            "type": "boolean",
+            "required": true
+        },
+        "customer_collaborator": {
+            "type": "string",
+            "required": false
+        },
+        "date_created": {
+            "format":"date",
+            "type": "string",            
+            "required": false
+        },
+        "notes": {
+            "type": "string",
+            "required": false
+        },
+        "order_num": {
+            "type": "string",
+            "required": true
+        },
+        "type": {
+            "type": "string",
+            "required": true
+        },        
+        "distribution_rights": {
+            "type": "boolean",
+            "required": true
+        },
+        "origin_verified": {
+            "type": "boolean",
+            "required": true
+        },
+        "scaling_verified": {
+            "type": "boolean",
+            "required": true
+        }
+    },
+    "additionalProperties": false
+}
