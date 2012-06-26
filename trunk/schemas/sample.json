@@ -2,8 +2,8 @@
     "type": "object",
     "description": "Sample nodes describe physical samples collected from subjects or an environment. They are typically decorated with MIMS or MIGS.",
     "properties": {
-        "migs": {
-            "$ref": "migs"
+        "migs_opgen": {
+            "$ref": "migs_opgen"
         },
         "visit_number": {
             "type": "integer",
