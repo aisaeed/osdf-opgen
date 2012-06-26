@@ -20,7 +20,7 @@
         },
         "enzyme": {
             "type": "string",
-            "required": false
+            "required": true
         },
         "genome_length": {
             "type": "integer",
@@ -48,7 +48,7 @@
         "date_created": {
             "format":"date",
             "type": "string",            
-            "required": false
+            "required": true
         },
         "notes": {
             "type": "string",
