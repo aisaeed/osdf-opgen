@@ -1,25 +1,26 @@
 {
    "type": "object",
+   "description": "A modified version of the MIGS standard for use by OpGen. Most fields being optional instead of strictly requried....",
    "properties": {
         "adapters": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "annot_source": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "assembly": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "assembly_name": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "biome": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "biotic_relationship": {
             "$ref": "biotic_relationships"
@@ -30,7 +31,7 @@
         },
         "encoded_traits": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "env_package": {
             "$ref": "env_packages"
@@ -38,67 +39,67 @@
         "estimated_size": {
             "type": "integer",
             "minimum": 0,
-            "required": true
+            "required": false
         },
         "experimental_factor": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "extrachrom_elements": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "feature": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "finishing_strategy": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "geo_loc_name": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "health_disease_stat": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "host_spec_range": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "investigation_type": {
            "$ref": "investigation_types"
         },
         "isol_growth_condt": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "lat_lon": {
             "title": "Latitude/Longitude. Probably needs to use a regex here.",
             "type": "string",
-            "required": true
+            "required": false
         },
         "lib_vector": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "material": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "nucl_acid_amp": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "nucl_acid_ext": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "num_replicons": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "project_name": {
             "type": "string",
@@ -106,50 +107,51 @@
         },
         "rel_to_oxygen": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "samp_collect_device": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "samp_mat_process": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "samp_size": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "seq_meth": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "sop": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "source_mat_id": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "specific_host": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "submitted_to_insdc": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "subspecf_gen_lin": {
             "type": "string",
-            "required": true
+            "required": false
         },
         "trophic_level": {
             "$ref": "trophic_levels"
         },
         "url": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "required": true
         }
     },
     "additionalProperties": false

@@ -33,5 +33,5 @@
         "photosynthetic",
         "phototroph"
     ],
-    "required": true
+    "required": false
 }
