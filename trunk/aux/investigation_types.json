@@ -1,0 +1,14 @@
+{
+    "type": "string",
+    "enum": [
+        "eukaryote",
+        "bacteria_archaea",
+        "plasmid",
+        "virus",
+        "organelle",
+        "metagenome,miens-survey",
+        "miens-culture"
+    ],
+    "required": false
+}
+
