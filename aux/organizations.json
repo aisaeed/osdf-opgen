@@ -3,7 +3,7 @@
     "type": "string",
     "enum": [
         "opgen",
-        "igs",
+        "igs"
     ],
     "required": true
 }
